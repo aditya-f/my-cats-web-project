@@ -4,3 +4,17 @@
   width: 300px;
   border-radius: 50%;
 }
+
+.cat-row {
+  display: flex;
+}
+
+.cat-card {
+  flex-grow: 1;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* table {
+  text-align: center;
+} */
