@@ -1,20 +1,31 @@
 /* https://colorhunt.co/palette/226680 */
 
+* {
+  box-sizing: border-box;
+}
+
 .cat-face {
   width: 300px;
   border-radius: 50%;
+  border: 1px solid black;
+  margin: 25px;
 }
 
 .cat-row {
   display: flex;
+  /* border: 1px solid black; */
+
 }
 
 .cat-card {
   flex-grow: 1;
-  margin: 50px auto;
+  margin: 20px;
   text-align: center;
+  /* border: 1px solid black; */
+  padding: 10px;
 }
 
-/* table {
-  text-align: center;
-} */
+table {
+  /* border: 1px solid black; */
+  margin: auto;
+}
