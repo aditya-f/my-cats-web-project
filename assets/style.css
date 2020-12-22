@@ -1,17 +1,57 @@
 /* https://colorhunt.co/palette/226680 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+html {
+  /* scroll-behavior: smooth; */
+  background-color: #14274e;
+  margin: 0;
+  padding: 0;
+}
 
 * {
   box-sizing: border-box;
 }
 
-header h1 {
+body {
+  background-color: #f1f6f9;
+  font-family: "Rubik", monospace;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#top-title {
+  background-color: #14274e;
+  margin: 0;
+}
+
+#title {
   font-family: "Lobster Two", sans-serif;
   font-weight: 400;
   font-size: 150px;
   text-align: center;
+  color: #f1f6f9;
 }
+
+nav {
+  padding: 10px;
+  background-color: #14274e;
+  margin: auto;
+}
+
+nav a {
+  color: #f1f6f9;
+  text-decoration: none;
+}
+
+nav li{
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+}
+
 
 main {
   font-size: 20px;
@@ -23,25 +63,46 @@ h3 {
   font-size: 40px;
 }
 
+main header {
+  margin: 25px;
+}
+
+.sub-title {
+  text-align: left;
+  margin: 25px 25px 20px 50px;
+}
+
 .cat-face {
   width: 300px;
   border-radius: 50%;
-  border: 1px solid black;
-  margin: 25px;
+  border: 5px solid #f1f6f9;
 }
 
 .cat-row {
   display: flex;
+  flex-wrap: wrap;
   /* border: 1px solid black; */
-
 }
 
 .cat-card {
-  flex-grow: 1;
-  margin: 20px;
+  flex-basis: 30%;
+  margin: 20px auto;
   text-align: center;
-  border: 1px solid black;
-  padding: 10px;
+  /* border: 1px solid black; */
+  color: #f1f6f9;
+  padding: 25px;
+  background-color: #14274e;
+  border-radius: 3%;
+}
+
+.img-card {
+  flex-basis: 40%;
+  margin: 20px auto;
+  text-align: center;
+  color: #f1f6f9;
+  padding: 0px;
+  background-color: #14274e;
+  border-radius: 3%;
 }
 
 table {
@@ -51,4 +112,33 @@ table {
 
 footer {
   text-align: center;
+  margin: 25px;
+  padding: 25px;
+}
+
+figure img {
+  width: 750px;
+  border-radius: 3%;
+  margin: 5px;
+}
+
+article p {
+  text-align: justify;
+  margin: 50px;
+}
+
+@media screen and (max-width: 1350px) {
+  .cat-card {
+    flex-basis: 75%;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  nav {
+    width: 50%;
+  }
+
+  nav li {
+    display: grid;
+  }
 }
