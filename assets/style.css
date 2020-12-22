@@ -165,13 +165,29 @@ figcaption {
   } */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 910px) {
+  .img-card img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 695px) {
   .my-card img {
     width: 250px;
   }
 
   .cat-face {
     width: 250px;
+  }
+
+  .img-card img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .img-card img {
+    width: 300px;
   }
 }
 
@@ -201,7 +217,8 @@ figcaption {
     width: 200px;
   }
   
-  /* .cat-card {
-    flex-basis: 90%;
-  } */
+  .img-card img {
+    width: 220px;
+    margin: auto;
+  }
 }
