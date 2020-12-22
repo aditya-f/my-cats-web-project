@@ -255,6 +255,10 @@ figcaption {
 }
 
 @media screen and (max-width: 390px) {
+  nav {
+    position: relative;
+  }
+
   nav a {
     /* display: grid; */
     float: none;
