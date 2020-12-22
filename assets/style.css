@@ -1,11 +1,10 @@
-/* https://colorhunt.co/palette/226680 */
-
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
-/* html {
-  scroll-behavior: smooth;
-} */
+html {
+  scroll-padding-top: 100px;
+  /* scroll-behavior: smooth; */
+}
 
 * {
   box-sizing: border-box;
@@ -21,30 +20,48 @@ body {
 }
 
 header {
-  background-color: #14274e;
+  display: inline;
   height: auto;
   margin: 0;
 }
 
 #title {
+  background-color: #14274e;
   font-family: "Lobster Two", sans-serif;
   font-weight: 400;
   font-size: 150px;
   text-align: center;
   color: #f1f6f9;
+  padding: 0 20px;
   margin: 0;
   padding-top: 25px;
 }
 
 nav {
+  width: 100%;
   padding: 10px;
   background-color: #14274e;
   margin: auto;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
 }
 
 nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
   color: #f1f6f9;
   text-decoration: none;
+
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: #f1f6f9;
+  color: #14274e;
+  text-decoration: underline;
 }
 
 nav li {
@@ -79,7 +96,6 @@ h3 {
   /* border: 1px solid black; */
 }
 
-
 .cat-card {
   flex-basis: 30%;
   margin: 20px auto;
@@ -89,12 +105,18 @@ h3 {
   padding: 25px;
   background-color: #f1f6f9;
   border-radius: 25px;
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .cat-face {
   width: 300px;
   border-radius: 50%;
   border: 5px solid #14274e;
+}
+
+.cat-card:hover {
+  transform: scale(1.075);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .img-card {
@@ -111,6 +133,12 @@ h3 {
   border-radius: 25px;
   margin: 5px;
   border: 10px solid #14274e;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.img-card img:hover {
+  transform: scale(1.075);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .my-card {
@@ -127,7 +155,7 @@ table {
 }
 
 footer {
-  margin-top: 200px;
+  margin-top: 175px;
   text-align: center;
   padding: 10px;
   background-color: #14274e;
@@ -197,12 +225,12 @@ figcaption {
   }
 
   nav {
-    width: 50%;
+    width: auto;
   }
 
-  nav li {
+  /* nav li {
     display: grid;
-  }
+  } */
 
   .cat-face {
     width: 200px;
@@ -216,9 +244,26 @@ figcaption {
   .my-card img {
     width: 200px;
   }
-  
+
   .img-card img {
     width: 220px;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  nav a {
+    /* display: grid; */
+    float: none;
+    display: grid;
+    margin: auto;
+  }
+
+  ul {
+    padding: 5px;
+  }
+
+  html {
+    scroll-padding-top: 300px;
   }
 }
