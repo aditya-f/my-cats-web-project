@@ -3,7 +3,7 @@
 
 html {
   scroll-padding-top: 100px;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -54,7 +54,6 @@ nav a {
   padding: 10px 20px;
   color: #f1f6f9;
   text-decoration: none;
-
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -91,7 +90,6 @@ h3 {
 .cat-row {
   display: flex;
   flex-wrap: wrap;
-  /* border: 1px solid black; */
 }
 
 .cat-card {
@@ -142,13 +140,11 @@ h3 {
 .my-card {
   margin: 25px auto;
   text-align: center;
-  /* border: 5px solid #14274e; */
   border-radius: 25px;
   padding: 25px;
 }
 
 table {
-  /* border: 1px solid black; */
   margin: auto;
 }
 
@@ -190,10 +186,6 @@ figcaption {
   .my-card {
     width: auto;
   }
-
-  /* .img-card {
-    flex-basis: 75%;
-  } */
 }
 
 @media screen and (max-width: 910px) {
@@ -230,10 +222,6 @@ figcaption {
   nav {
     width: auto;
   }
-
-  /* nav li {
-    display: grid;
-  } */
 
   .cat-face {
     width: 200px;

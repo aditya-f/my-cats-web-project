@@ -1,5 +1,5 @@
-function resetStyle (id) {
-    document.getElementById(id).removeAttribute("style");
+function resetStyle(id) {
+  document.getElementById(id).removeAttribute("style");
 }
 
 const names = document.querySelectorAll(".name");
@@ -11,6 +11,8 @@ for (let name of names) {
     idStyle.transform = "rotate(5deg)";
     idStyle.backgroundColor = "#14274e";
     idStyle.color = "#f1f6f9";
-    setTimeout(() => {resetStyle(target.classList[1]);}, 700);
+    setTimeout(() => {
+      resetStyle(target.classList[1]);
+    }, 1100);
   });
 }
