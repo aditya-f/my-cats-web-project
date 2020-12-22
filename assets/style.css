@@ -4,10 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 html {
-  /* scroll-behavior: smooth; */
-  background-color: #14274e;
-  margin: 0;
-  padding: 0;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -17,14 +14,14 @@ html {
 body {
   background-color: #f1f6f9;
   font-family: "Rubik", monospace;
-  color: black;
+  color: #14274e;
   margin: 0;
   padding: 0;
 }
 
 #top-title {
   background-color: #14274e;
-  margin: 0;
+  height: 250px;
 }
 
 #title {
@@ -33,6 +30,8 @@ body {
   font-size: 150px;
   text-align: center;
   color: #f1f6f9;
+  margin: auto;
+  padding-top: 25px;
 }
 
 nav {
@@ -69,13 +68,13 @@ main header {
 
 .sub-title {
   text-align: left;
-  margin: 25px 25px 20px 50px;
+  margin: 50px 25px 20px 50px;
 }
 
 .cat-face {
   width: 300px;
   border-radius: 50%;
-  border: 5px solid #f1f6f9;
+  border: 5px solid #14274e;
 }
 
 .cat-row {
@@ -88,21 +87,30 @@ main header {
   flex-basis: 30%;
   margin: 20px auto;
   text-align: center;
-  /* border: 1px solid black; */
-  color: #f1f6f9;
+  border: 5px solid #14274e;
+  color: #14274e;
   padding: 25px;
-  background-color: #14274e;
-  border-radius: 3%;
+  background-color: #f1f6f9;
+  border-radius: 25px;
 }
 
 .img-card {
   flex-basis: 40%;
   margin: 20px auto;
   text-align: center;
-  color: #f1f6f9;
+  color: #14274e;
   padding: 0px;
-  background-color: #14274e;
-  border-radius: 3%;
+  background-color: #f1f6f9;
+  border-radius: 25px;
+}
+
+.my-card {
+  margin: 25px auto;
+  width: 30%;
+  text-align: center;
+  /* border: 5px solid #14274e; */
+  border-radius: 25px;
+  padding: 25px;
 }
 
 table {
@@ -118,13 +126,18 @@ footer {
 
 figure img {
   width: 750px;
-  border-radius: 3%;
+  border-radius: 25px;
   margin: 5px;
+  border: 10px solid #14274e;
 }
 
 article p {
   text-align: justify;
   margin: 50px;
+}
+
+aside p {
+  text-align: center;
 }
 
 @media screen and (max-width: 1350px) {
