@@ -252,6 +252,10 @@ figcaption {
     width: 220px;
     margin: auto;
   }
+
+  article p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -260,7 +264,6 @@ figcaption {
   }
 
   nav a {
-    /* display: grid; */
     float: none;
     display: grid;
     margin: auto;
@@ -271,6 +274,21 @@ figcaption {
   }
 
   html {
-    scroll-padding-top: 300px;
+    scroll-padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .my-card img {
+    width: 150px;
+  }
+
+  .img-card img {
+    width: 180px;
+    margin: auto;
+  }
+
+  .cat-face {
+    width: 150px;
   }
 }
