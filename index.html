@@ -23,7 +23,7 @@
         <article id="bio">
           <h3 class="sub-title">My Cats Bio</h3>
           <div class="cat-row">
-            <div class="cat-card">
+            <div class="cat-card" id="miaw">
               <div class="head">
                 <h3>Miaw</h3>
                 <img
@@ -49,7 +49,7 @@
                 </table>
               </section>
             </div>
-            <div class="cat-card">
+            <div class="cat-card" id="timmy">
               <div class="head">
                 <h3>Timmy</h3>
                 <img
@@ -75,7 +75,7 @@
                 </table>
               </section>
             </div>
-            <div class="cat-card">
+            <div class="cat-card" id="hero">
               <div class="head">
                 <h3>H&#233;ro</h3>
                 <img
@@ -103,7 +103,7 @@
             </div>
           </div>
           <section class="cat-row">
-            <div class="cat-card">
+            <div class="cat-card" id="mozza">
               <div class="head">
                 <h3>Mozza</h3>
                 <img
@@ -129,7 +129,7 @@
                 </table>
               </section>
             </div>
-            <div class="cat-card">
+            <div class="cat-card" id="summer">
               <div class="head">
                 <h3>Summer</h3>
                 <img
@@ -155,7 +155,7 @@
                 </table>
               </section>
             </div>
-            <div class="cat-card">
+            <div class="cat-card" id="snowy">
               <div class="head">
                 <h3>Snowy</h3>
                 <img
@@ -192,7 +192,7 @@
                   src="assets/picts/additional/i1.jpg"
                   alt="Photo of my cat, H&#233;ro"
                 />
-                <figcaption>H&#233;ro sleeping</figcaption>
+                <figcaption><a class="name hero" href="#hero">H&#233;ro</a> sleeping</figcaption>
               </figure>
             </div>
             <div class="img-card">
@@ -201,7 +201,7 @@
                   src="assets/picts/additional/i2.jpg"
                   alt="H&#233;ro and Mozza"
                 />
-                <figcaption>H&#233;ro sleeping with Mozza</figcaption>
+                <figcaption><a href="#hero" class="name hero">H&#233;ro</a> sleeping with <a href="#mozza" class="name mozza">Mozza</a></figcaption>
               </figure>
             </div>
           </div>
@@ -212,7 +212,7 @@
                   src="assets/picts/additional/i3.jpg"
                   alt="Mozza and Timmy"
                 />
-                <figcaption>Baby Mozza sleeping next to Timmy</figcaption>
+                <figcaption>Baby <a href="#mozza" class="name mozza">Mozza</a> sleeping next to <a href="#timmy" class="name timmy">Timmy</a></figcaption>
               </figure>
             </div>
             <div class="img-card">
@@ -221,7 +221,7 @@
                   src="assets/picts/additional/i4.jpg"
                   alt="Miaw and Timmy"
                 />
-                <figcaption>Miaw sleeping with baby Timmy</figcaption>
+                <figcaption><a href="#miaw" class="name miaw">Miaw</a> sleeping with baby <a href="#timmy" class="name timmy">Timmy</a></figcaption>
               </figure>
             </div>
           </div>
@@ -229,7 +229,7 @@
             <div class="img-card">
               <figure>
                 <img src="assets/picts/additional/i5.jpg" alt="Snowy" />
-                <figcaption>Snowy sleeping</figcaption>
+                <figcaption><a href="#snowy" class="name snowy">Snowy</a> sleeping</figcaption>
               </figure>
             </div>
             <div class="img-card">
@@ -238,7 +238,7 @@
                   src="assets/picts/additional/i6.jpg"
                   alt="Summer and Snowy"
                 />
-                <figcaption>Summer and Snowy sleeping</figcaption>
+                <figcaption><a href="#summer" class="name summer">Summer</a> and <a href="#snowy" class="name snowy">Snowy</a> sleeping</figcaption>
               </figure>
             </div>
           </div>
@@ -270,5 +270,6 @@
     <footer>
       <p>Submission Untuk Kelas Belajar Dasar Pemrograman Web Dicoding</p>
     </footer>
+    <script src="assets/script.js"></script>
   </body>
 </html>

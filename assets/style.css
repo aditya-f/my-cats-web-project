@@ -61,7 +61,6 @@ nav a {
 nav a:hover {
   background-color: #f1f6f9;
   color: #14274e;
-  text-decoration: underline;
 }
 
 nav li {
@@ -176,6 +175,11 @@ figcaption {
   background-color: #f1f6f9;
   text-align: center;
   height: 30px;
+}
+
+.name {
+  color: #14274e;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1350px) {
